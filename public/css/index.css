@@ -5,6 +5,14 @@ main {
 	width: 100%;
 }
 
+.site-header {
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	position: absolute;
+}
+
 .split {
 	flex-grow: 1;
 	flex-basis: 0;
