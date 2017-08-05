@@ -1,10 +1,11 @@
 :root {
-	--color-primary: #fece46;
+	--color-primary: #88d489;
 	--color-grey: #eaeaea;
 
 	--font: 'Montserrat';
 	--font-header: 'Montserrat';
 	--font-color: #333;
+	--font-color-light: #666;
 	--line-height: 1.45;
 
 	--text-size-xlg: 1.266em;
@@ -23,7 +24,7 @@
 	--container-padding-md: 5rem;
 	--container-padding-rg: 5rem;
 
-	--container-sm: 400px;
+	--container-sm: 550px;
 	--container-md: 700px;
 	--container-rg: 960px;
 	--container-lg: 1200px;
@@ -119,12 +120,12 @@ input:not([type=file]), select, textarea {
 	border: 2px solid var(--color-grey);
 }
 
-.container--sm {
-	padding: var(--container-padding-rg) calc(50% - (var(--container-sm) / 2));
-}
-
 .container {
 	padding: var(--container-padding-rg) calc(50% - (var(--container-rg) / 2));
+}
+
+.container--sm {
+	padding: var(--container-padding-sm) calc(50% - (var(--container-sm) / 2));
 }
 
 .container--md {
@@ -133,10 +134,6 @@ input:not([type=file]), select, textarea {
 
 .container--lg {
 	padding: var(--container-padding-rg) calc(50% - (var(--container-lg) / 2));
-}
-
-.section-header {
-	margin-bottom: var(--container-padding-rg);
 }
 
 @media (max-width: 1300px) {
@@ -165,4 +162,14 @@ input:not([type=file]), select, textarea {
 	.container, .container--lg, .container--md, .container--sm {
 		padding: var(--container-padding-xsm);
 	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+.page-header {
+	color: var(--font-color-light);
+	font-weight: 200;
+	margin-bottom: 4rem;
 }

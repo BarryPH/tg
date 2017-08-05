@@ -1,0 +1,37 @@
+.form-section {
+	display: flex;
+}
+
+form {
+	--input-width: 150px;
+}
+
+form label, form input {
+	display: inline-block;
+}
+
+label {
+	flex-shrink: 0;
+	display: inline-block;
+	margin-top: 0.6rem;
+	width: 150px;
+	font-weight: bold;
+}
+
+label .sub-label {
+	display: block;
+	margin-top: 0.5rem;
+	font-weight: 200;
+}
+
+button {
+	margin-top: 1rem;
+	padding: 0.5rem 0;
+	width: 100%;
+	background-color: var(--color-primary);
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	margin-left: var(--input-width);
+	width: calc(100% - var(--input-width));
+}

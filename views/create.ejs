@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<% include layouts/head.ejs %>
+
+	<link rel='stylesheet' href='/css/create.css'>
+</head>
+<body>
+	<% include layouts/body.ejs %>
+
+	<div class='container'>
+		<div class='text-center'>
+			<h2 class='page-header'>Create a new group</h2>
+		</div>
+
+		<div class='container container--sm'>
+			<form action='/create' method='POST'>
+				<div class='form-section'>
+					<label for='title'>Title</label>
+					<input name='title'>
+				</div>
+
+				<div class='form-section'>
+					<label for='magnets'>Magnets
+						<small class='sub-label'>
+						One per line
+						</small>
+					</label>
+					<textarea name='magnets' rows='8'></textarea>
+				</div>
+
+				<button>Create</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
