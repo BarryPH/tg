@@ -3,8 +3,24 @@
 <html lang="en">
 <head>
 	<% include layouts/head.ejs %>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
 </head>
 <body>
 	<% include layouts/body.ejs %>
+	<main>
+		<div class="split split--primary">
+			<h2>TorrentGroups</h2>
+		</div>
+		<div class="split">
+			<form class="search-form" action="/" method="post">
+				<input placeholder="Search" type="text" name="user_search">
+			</form>
+			<p class="blurb">
+				No Need to create a new torrent and split peers.
+				</br>
+				Batch multiple torrent files in one click.
+			</p>
+		</div>
+	</main>
 </body>
 </html>

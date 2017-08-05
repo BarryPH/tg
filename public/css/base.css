@@ -3,7 +3,7 @@
 	--color-grey: #eaeaea;
 
 	--font: 'Montserrat';
-	--font-header: 'Montserrat';
+	--font-header: 'Audiowide';
 	--font-color: #333;
 	--font-color-light: #666;
 	--line-height: 1.45;
@@ -32,6 +32,10 @@
 
 *, *:before, *:after {
 	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
 }
 
 body {
@@ -172,4 +176,26 @@ input:not([type=file]), select, textarea {
 	color: var(--font-color-light);
 	font-weight: 200;
 	margin-bottom: 4rem;
+}
+
+.site-header{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.site-header a:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.site-header .logo {
+	padding: 1rem 2rem;
+}
+
+.site-header nav {
+	padding: 1rem 2rem;
 }

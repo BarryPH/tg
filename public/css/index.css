@@ -1,0 +1,39 @@
+main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.split {
+	flex-grow: 1;
+	flex-basis: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	text-align: center;
+}
+
+.split--primary {
+	background-color: #88d498;
+}
+
+.search-form {
+	position: absolute;
+	top: 0;
+	padding: 2.5rem;
+	border: 2px solid #cccccc;	
+	background-color: #ffffff;
+	transform: translateY(-50%);
+}
+
+.search-form input {
+	width: 300px;
+	max-width: 100%;
+	border: 0;
+	border-bottom: 1px solid #cccccc;
+	padding: 0.4rem;
+	margin-bottom: 0;
+	font-size: var(--header-size-xsm);
+}
